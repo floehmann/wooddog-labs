@@ -28,6 +28,10 @@ $ cat /proc/version
 
 # net info
 $ /sbin/ifconfig 
+# debian
+$ cat /etc/network/interfaces 
+# redhat
+# $ cat /etc/sysconfig/network-scripts/ifcfg-eth0
 $ /sbin/ip addr
 $ netstat -nr
 $ ip route
