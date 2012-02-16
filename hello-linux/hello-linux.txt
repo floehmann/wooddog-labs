@@ -79,7 +79,10 @@ $ echo hi $USER > hello.txt
 $ ls -l hello.txt
 $ cat hello.txt 
 $ echo bye $USER >> hello.txt
-$ grep hi hello.txt
+$ grep hello hello.txt
+$ grep hello hello.txt
+$ grep $USER hello.txt 
+$ grep $(id -un) hello.txt
 $ cat hello.txt 
 $ ls -l hello.txt
 $ > hello.txt 
