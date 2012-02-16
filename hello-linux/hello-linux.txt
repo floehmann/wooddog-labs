@@ -1,0 +1,102 @@
+# manuals (man pages)
+$ man man
+
+# user info
+$ whoami
+$ id
+$ echo $SHELL
+$ echo $HOME
+$ groups 
+$ sudo whoami
+$ last
+$ w
+$ users 
+$ history
+
+# editors
+$ vi
+$ emacs
+$ pico
+$ nano
+
+# host info
+$ uname 
+$ uname -n
+$ uname -a
+$ hostname 
+$ cat /proc/version 
+
+# net info
+$ /sbin/ifconfig 
+$ /sbin/ip addr
+$ netstat -nr
+$ ip route
+$ cat /etc/resolv.conf 
+$ /usr/sbin/arp
+$ ping google.com
+$ traceroute google.com
+$ dig google.com
+$ sudo tcpdump -npi eth0
+
+
+# system info
+$ date 
+$ uptime
+$ dmesg
+$ sudo cat /var/log/dmesg
+$ lspci 
+$ sudo /usr/sbin/dmidecode
+$ cat /proc/cpuinfo
+$ cat /proc/meminfo
+$ free -m
+$ top
+$ ps
+$ ps wwwaxu
+$ pgrep ntp
+$ netstat -ln
+$ sudo netstat -plant
+$ sudo lsof
+$ sudo lsof -i
+$ vmstat 3 
+$ iostat 
+$ mount
+$ df
+$ cat /proc/mounts 
+$ du /tmp
+
+# files
+$ cd /home/$(id -un)
+$ pwd
+$ [[ $(pwd) == /home/$(id -un) ]] && echo "I am home." || echo "I am lost."
+$ ls
+$ ls -la
+$ mkdir test
+$ ls
+$ pwd
+$ echo hi
+$ echo hi $USER
+$ echo hi $USER > hello.txt
+$ ls -l hello.txt
+$ cat hello.txt 
+$ echo bye $USER >> hello.txt
+$ cat hello.txt 
+$ ls -l hello.txt
+$ > hello.txt 
+$ ls -l hello.txt 
+$ rm hello.txt 
+$ ls -la
+$ cd ..
+$ pwd
+$ ls
+$ du -hs test/
+$ ls -lad test/
+$ rmdir test
+$ ls -lad test
+
+
+# remove user@host from the text file.  
+$ sed 's!^fran@blue:[^\$]*!!g' hello-linux.txt
+$ sed -i.bak 's!^fran@blue:[^\$]*!!g' hello-linux.txt
+$ ls -l hello-linux.txt*
+
+
